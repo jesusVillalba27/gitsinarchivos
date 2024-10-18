@@ -30,6 +30,22 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+            <Label Text="¿Cuál es la capital de Francia?" FontSize="Large" />
+
+            <Button
+            Text="París"
+            Clicked="OnRespuestaClicked"
+            SemanticProperties.Hint="Respuesta correcta" />
+
+            <Button
+            Text="Londres"
+            Clicked="OnRespuestaClicked"
+            SemanticProperties.Hint="Respuesta incorrecta" />
+
+            <Button
+            Text="Berlín"
+            Clicked="OnRespuestaClicked"
+            SemanticProperties.Hint="Respuesta incorrecta" />
         </VerticalStackLayout>
     </ScrollView>
 

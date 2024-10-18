@@ -20,6 +20,22 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private async void OnRespuestaClicked(object sender, EventArgs e)
+        {
+            var button = (Button)sender;
+            string respuesta = button.Text;
+
+            if (respuesta == "París")
+            {
+                await DisplayAlert("Resultado", "¡Correcto!", "OK");
+            }
+            else
+            {
+                await DisplayAlert("Resultado", "Incorrecto. Intenta de nuevo.", "OK");
+            }
+        }
+
     }
 
 }
