@@ -32,6 +32,19 @@
             <Button Text="Ir a Página 4" Clicked="OnPage4ButtonClicked"/>
             <Button Text="Ir a Página 5" Clicked="OnPage5ButtonClicked"/>
 
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+    x:Name="CounterBtn"
+    Text="Click me" 
+    SemanticProperties.Hint="Counts the number of times you click"
+    Clicked="OnCounterClicked"
+    HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
 
